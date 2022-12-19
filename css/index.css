@@ -1,0 +1,176 @@
+
+* {box-sizing:border-box;}
+
+body {font-family: arial;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin:0;padding:0;                   
+}
+
+section {padding:5% 0;}
+
+.titulo-section {font-family: tahoma;
+    font-size:3rem;
+    color:rgb(184, 27, 27);
+    text-align:left;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width:90%;
+    margin:1% auto;}
+
+#hero { background-image: url('../images/peaky\ blinders.jpg');
+       
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+
+nav {position:sticky;
+  top:0;
+  z-index: 99;
+}
+
+.topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+}
+
+.topnav a.active {
+    background-color: #057499;
+    color: rgb(179, 176, 172);
+  }
+
+.topnav .icon {
+    display: none;
+  } 
+
+
+.texto {
+  color:#f2f2f2;
+}
+.grid2 {display:grid;
+    grid-template-columns: 50% 50%;}
+
+.col2 {padding:1%;}
+
+.col2 img {
+  padding: 5%;
+  width:100%;} 
+
+  
+.grid4 {display:grid;
+    grid-template-columns:25% 25% 25% 25%;}
+.col4 {padding:4%;}
+
+.card {
+        box-shadow: 0 4px 8px 0 rgba(255, 112, 112, 0.434);
+        transition: 0.1s;
+        background-color: #0e0e0e;
+      }
+.card img {
+               width:92%;
+               height:300px; 
+               margin:4%;
+               border-radius:50%; 
+               opacity:0.2;    
+               transition: 1s; 
+    }
+.card img:hover {
+        opacity:1;
+    }
+.card:hover {
+        box-shadow: 0 8px 16px 0 rgb(255, 0, 0);
+      }
+      
+.container {
+        padding: 2px 16px;
+      }
+
+.card a {text-decoration: none;
+     background-color: rgb(255, 0, 0);
+     color:white;
+     font-weight:bold;
+     border-radius:5px;
+     padding:10px;
+     display:inline-flex;
+     margin-bottom:10px;
+ }
+
+.card a:hover {background-color: rgba(255, 0, 0, 0.7);}
+
+footer {background-color: #000000;}
+
+.grid3 {display:grid;
+        grid-template-columns: 25% 25% 50%;}
+
+.col3 {padding:6%;}
+
+.col3 img {width:50%;
+           display:block;
+           margin:auto;}
+
+.fa {
+  box-sizing:content-box;
+  padding: 10px;
+  font-size: 20px;
+  width: 30px; 
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.enlace {text-decoration: none;
+  color:rgba(255, 0, 0, 0.792);
+  font-weight:bold;}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #f60c79;
+  color: white;
+}
+
+
+@media only screen and (width<=900px){
+  #wrapper {width:90%;}
+  .grid2 {grid-template-columns: 100%;}
+  .grid4 {grid-template-columns: 50% 50%;}
+  .grid3 {grid-template-columns:50% 50%;} 
+  #lista2 {margin-top:-75px;}
+}
+
+@media only screen and (width<=600px){
+#wrapper {width:90%;}
+#titulo {width:80%;
+    left:10%;}
+#titulo4 {top:-500px;}
+.grid4{grid-template-columns: 100%;}
+}
